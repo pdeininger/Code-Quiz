@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+    
+        const quizContainer = document.getElementById('quiz');
+        const resultsContainer = document.getElementById('results');
+        const submitButton = document.getElementById('submit');
+        
+        
+function buildQuiz(){}
+
+function showResults(){}
+
+// display quiz right away
+buildQuiz();
+
+// on submit, show results
+submitButton.addEventListener('click', showResults);
+
+const myQuestions = [
+  {
+    question: "Who was originally cast as the Tin Man in the Wizard of Oz",
+    answers: {
+      a: "Don Ameche",
+      b: "Buddy Ebsen",
+      c: "Mel Blanc"
+      d: "Fred MacMurray"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "Judy Garland, who played Dorothy in the Wizard of Oz, is the mother of which of the following famous actresses?",
+    answers: {
+      a: "Bette Midler",
+      b: "Hayley Mills",
+      c: "Liza Minnelli"
+      d: "Susan Sarandon"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "How many characters did actor Frank Morgan play?",
+    answers: {
+      a: "5",
+      b: "1",
+      c: "3",
+      d: "None"
+    },
+    correctAnswer: "5. He played Professor Marvel, the Wizard, the Gatekeeper, the Carriage Driver, and the Guard"
+  }
+{
+    question: "What is the Dorothy's dog named?",
+    answers: {
+      a: "Benji",
+      b: "Lassie",
+      c: "Trigger",
+      d: "Toto"
+    },
+    correctAnswer: "c. A Horse of a Different Color"
+}
+{
+    question: "What role did Billie Burke play?",
+    answers: {
+      a: "Uncle Henry",
+      b: "Miss Gulch",
+      c: "the Wizard",
+      d: "Glinda the Good Witch"
+    },
+    correctAnswer: "d.  Glinda the Good Witch"
+}
+{
+    question: "What is the name of Dorothy's aunt?",
+    answers: {
+      a: "Auntie Em",
+      b: "Aunt Sue",
+      c: "Auntie",
+      d: "Aunt Caroline"
+    },
+    correctAnswer: "a.  Auntie Em"
+}
+{
+    question: "What is the name of the horse pulling the carriage in the Emerald City?",
+    answers: {
+      a: "Mr. Ed",
+      b: "Seabiscuit",
+      c: "A Horse of a Different Color",
+      d: "Black Beauty"
+    },
+    correctAnswer: "A Horse of a Different Color"
+}
+];
+
+</body>
+</html>
