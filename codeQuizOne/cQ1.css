@@ -1,12 +1,12 @@
 body {
-    background:  url("halftone-yellow/halftone-yellow.png");
+    background:  url(images/halftone-yellow.png);
 }
 
 .grid {
     width: 600px;
     height: 500px;
     margin: 0 auto;
-    background-color: #fff;
+    background:  url(images/arab_tile.png);
     padding: 10px 50px 50px 50px;
     border: 2px solid #cbcbcb;
     
@@ -14,7 +14,7 @@ body {
 
 .grid h1 {
     font-family: "sans-serif";
-    background-color: green;
+    background:  url(images/halftone-yellow.png);
     font-size: 60px;
     text-align: center;
     color: #ffffff;
@@ -39,10 +39,10 @@ body {
 }
 
 #btn0, #btn1, #btn2, #btn3 {
-    background-color:green;
+    background:  url(images/halftone-yellow.png);
     width: 250px;
     font-size: 20px;
-    color: #fff;
+    color: green;
     border: 1px solid #1D3C6A;
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
@@ -58,6 +58,6 @@ body {
 }
 
 #progress {
-    color: #2b2b2b;
+    color: green;
     font-size: 18px;
 }
