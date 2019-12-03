@@ -1,3 +1,4 @@
+
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;
@@ -78,7 +79,7 @@ function showScores() {
 // create questions here
 var questions = [new Question("Who was originally cast as the Tin Man in the Wizard of Oz?", ["Don Ameche", "Buddy Ebsen","Mel Blanc", "Fred MacMurray"], "Buddy Ebsen"),
     new Question("Judy Garland, the actress who played Dorothy, is the mother of which of the following famous people?", ["Bette Midler", "Hayley Mills", "Liza Minnelli", "Susan Sarandon"], "Liza Minnelli"),
-    new Question("How many characters did actor Frank Morgan play?", ["5", "1","None", "3"], "3"),
+    new Question("How many characters did actor Frank Morgan play?", ["5", "1","None", "3"], "5"),
     new Question("What is the name of Dorothy's dog?", ["Benji", "Lassie", "Bud", "Toto"], "Toto"),
     new Question("What role did Billie Burke play?", ["Glinda the Good Witch", "The Wizard", "Uncle Henry", "Miss Gulch"], "Glinda the Good Witch"),
     new Question("What is the name of Dorothy's aunt", ["Auntie Em", "Aunt Sue", "Auntie", "Aunt Caroline"], "Auntie Em")

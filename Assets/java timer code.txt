@@ -1,0 +1,32 @@
+var secondsDisplay = document.querySelector("#seconds");
+var playButton = document.querySelector("#play");
+
+var totalSeconds = 0;
+var secondsElapsed = 0;
+var interval;
+
+getTimePreferences();
+function getFormattedSeconds() {
+    var secondsLeft = (totalSeconds - secondsElapsed);
+    var formattedSeconds;
+
+if (secondsLeft <10){
+    formattedSeconds = "0" + secondsLeft;
+} else {
+    formatted seconds = secondsLeft;
+}
+return formattedSeconds;
+}
+
+function renderTime() {
+    secondsDisplay.textContent = getFormattedSeconds();
+}
+
+function startTimer() {
+    setTimeout();
+
+    interval - setInterval(function() {
+        secondsElapsed++;
+        renderTime();
+    }, 1000);
+}
