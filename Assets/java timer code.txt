@@ -30,3 +30,7 @@ function startTimer() {
         renderTime();
     }, 1000);
 }
+
+
+//questions as objects
+

@@ -76,6 +76,9 @@ function showScores() {
     element.innerHTML = gameOverHTML;
 };
  
+function getElementById() {
+    var id = JSON.parse(localStorage.getItem(scores));
+}
 // create questions here
 var questions = [new Question("Who was originally cast as the Tin Man in the Wizard of Oz?", ["Don Ameche", "Buddy Ebsen","Mel Blanc", "Fred MacMurray"], "Buddy Ebsen"),
     new Question("Judy Garland, the actress who played Dorothy, is the mother of which of the following famous people?", ["Bette Midler", "Hayley Mills", "Liza Minnelli", "Susan Sarandon"], "Liza Minnelli"),
@@ -84,6 +87,7 @@ var questions = [new Question("Who was originally cast as the Tin Man in the Wiz
     new Question("What role did Billie Burke play?", ["Glinda the Good Witch", "The Wizard", "Uncle Henry", "Miss Gulch"], "Glinda the Good Witch"),
     new Question("What is the name of Dorothy's aunt", ["Auntie Em", "Aunt Sue", "Auntie", "Aunt Caroline"], "Auntie Em")
 ];
+
 
 // create quiz
 var quiz = new Quiz(questions);
