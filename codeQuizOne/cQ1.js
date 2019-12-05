@@ -88,6 +88,15 @@ var questions = [new Question("Who was originally cast as the Tin Man in the Wiz
     new Question("What is the name of Dorothy's aunt", ["Auntie Em", "Aunt Sue", "Auntie", "Aunt Caroline"], "Auntie Em")
 ];
 
+var seconds = document.getElementById("countdown").textContent;
+var countdown = setInterval(function(){
+    seconds--;
+    (seconds == 1) ? document.getElementById("plural").textContent = "" : document.getElementById("plural").textContent = "s";
+    document.getElementById("countdown").textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+},1000);
+
+
 
 // create quiz
 var quiz = new Quiz(questions);
