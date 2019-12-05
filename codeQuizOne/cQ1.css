@@ -58,6 +58,19 @@ body {
 }
 
 #progress {
-    color: green;
+    width:  200px;
+    color: white;
     font-size: 18px;
+    border:  3px solid green;
+    background:  green; 
+    padding:  10px 10 px;
+    margin:  50 px 40 px 10 px 0px;
+}
+
+#countdown {
+    width:  150 px;
+    color:  green;
+    font-size: 18px;
+    padding: 10px 10 px;
+    
 }

@@ -31,8 +31,7 @@ function Question(text, choices, answer) {
 Question.prototype.isCorrectAnswer = function(choice) {
     return this.answer === choice;
 }
- 
- 
+
 function populate() {
     if(quiz.isEnded()) {
         showScores();
@@ -80,9 +79,9 @@ function getElementById() {
     var id = JSON.parse(localStorage.getItem(scores));
 }
 // create questions here
-var questions = [new Question("Who was originally cast as the Tin Man in the Wizard of Oz?", ["Don Ameche", "Buddy Ebsen","Mel Blanc", "Fred MacMurray"], "Buddy Ebsen"),
-    new Question("Judy Garland, the actress who played Dorothy, is the mother of which of the following famous people?", ["Bette Midler", "Hayley Mills", "Liza Minnelli", "Susan Sarandon"], "Liza Minnelli"),
-    new Question("How many characters did actor Frank Morgan play?", ["5", "1","None", "3"], "5"),
+var questions = [new Question("Who was originally cast as the Tin Man?", ["Don Ameche", "Buddy Ebsen","Mel Blanc", "Fred MacMurray"], "Buddy Ebsen"),
+    new Question("Which of these is Judy Garland's daughter?", ["Bette Midler", "Hayley Mills", "Liza Minnelli", "Susan Sarandon"], "Liza Minnelli"),
+    new Question("How many characters did Frank Morgan play?", ["5", "1","None", "3"], "5"),
     new Question("What is the name of Dorothy's dog?", ["Benji", "Lassie", "Bud", "Toto"], "Toto"),
     new Question("What role did Billie Burke play?", ["Glinda the Good Witch", "The Wizard", "Uncle Henry", "Miss Gulch"], "Glinda the Good Witch"),
     new Question("What is the name of Dorothy's aunt", ["Auntie Em", "Aunt Sue", "Auntie", "Aunt Caroline"], "Auntie Em")
@@ -95,8 +94,6 @@ var countdown = setInterval(function(){
     document.getElementById("countdown").textContent = seconds;
     if (seconds <= 0) clearInterval(countdown);
 },1000);
-
-
 
 // create quiz
 var quiz = new Quiz(questions);
