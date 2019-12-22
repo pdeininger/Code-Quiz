@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>The Quiz!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/cQ1.css">
 </head>
 <body>
-    <div id="container">
-        <div class="row">
-        <div class="col-md-12">
-        <div class="grid">
-            <div id="quiz">
-                <h1>The Wonderful Quiz of Oz</h1>
-                <hr style="margin-bottom: 20px">
-                
+    <script type="text/javascript">
+        var followTheYellowBrickRoad = confirm("Would you like to follow the yellow brick road?");
     
-                <p id="question"></p>
-     
-    
-                    <button id="btn"><span id="start"></span></button>
+        alert(followTheYellowBrickRoad);
+        
+    </script>
 
-                </div>
+    <div id="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="grid">
+        <div id="quiz">
+            <h1>The Wonderful Quiz of Oz</h1>
+            <h6>Score:  </h6> <text id="score001"> </text> 
+            <h6>Time:  </h6> <text id="time001"></text> 
+
+            <hr style="margin-bottom: 20px">
+            
+            <p id="question"></p>
+ 
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+ 
+            <hr style="margin-top: 50px">
+
+
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<span id="countdown">90</span> second<span id="plural">s</span>
+<script src="Assets/cQ1.js"></script>
+ 
 </body>
 </html>

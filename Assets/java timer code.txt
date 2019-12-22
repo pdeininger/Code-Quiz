@@ -1,10 +1,5 @@
 var secondsDisplay = document.querySelector("#seconds");
 var playButton = document.querySelector("#play");
-
-var totalSeconds = 0;
-var secondsElapsed = 0;
-var interval;
-
 getTimePreferences();
 function getFormattedSeconds() {
     var secondsLeft = (totalSeconds - secondsElapsed);
@@ -31,6 +26,10 @@ function startTimer() {
     }, 1000);
 }
 
+
+function choose(buttonResponse) {
+    if (buttonResponse === correctAnswer)
+}
 
 //questions as objects
 

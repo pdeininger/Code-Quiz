@@ -21,7 +21,6 @@ Quiz.prototype.isEnded = function() {
     return this.questionIndex === this.questions.length;
 }
  
- 
 function Question(text, choices, answer) {
     this.text = text;
     this.choices = choices;
