@@ -30,8 +30,7 @@ function printScore() {
       console.log(score)
     }
  }
- var 
- submitButton.addEventListener("click", storeHS);
+submitButton.addEventListener("click", storeHS);
  function storeHS (){
     event.preventDefault();
     var userInitials = userInitialInput.value;
