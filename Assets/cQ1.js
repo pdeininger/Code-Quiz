@@ -21,10 +21,12 @@ Quiz.prototype.isEnded = function() {
     return this.questionIndex === this.questions.length;
 }
  
-function Question(text, choices, answer) {
+function Question(text, choices, answer, showScores) {
     this.text = text;
     this.choices = choices;
     this.answer = answer;
+    //updated
+    this.showScores = showScores;
 }
  
 Question.prototype.isCorrectAnswer = function(choice) {
@@ -60,13 +62,12 @@ function guess(id, guess) {
     }
 };
  
- 
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 };
- 
+
 function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";

@@ -8,7 +8,7 @@ function getFormattedSeconds() {
 if (secondsLeft <10){
     formattedSeconds = "0" + secondsLeft;
 } else {
-    formatted seconds = secondsLeft;
+    formattedSeconds = secondsLeft;
 }
 return formattedSeconds;
 }
@@ -26,10 +26,9 @@ function startTimer() {
     }, 1000);
 }
 
-
 function choose(buttonResponse) {
-    if (buttonResponse === correctAnswer)
+    if (buttonResponse === correctAnswer);
 }
 
-//questions as objects
+
 
