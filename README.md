@@ -8,6 +8,6 @@ The timer provides 15 seconds per question. Once the user completes the quiz, th
 
 ![image](https://user-images.githubusercontent.com/57072421/71772997-45d26a80-2f23-11ea-8d2b-86a7a3aacdfb.png)
 
-
+Link to quiz is [here](https://pdeininger.github.io/Code-Quiz/)
 https://github.com/pdeininger/Code-Quiz.git
 https://github.com/pdeininger/Code-Quiz/blob/03d28d5292723088cf694d4e1aa79e4ff291a098/index.html#L2
